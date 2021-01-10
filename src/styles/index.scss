@@ -9,6 +9,7 @@
 @import '../components/Header/header';
 @import '../components/Home/home';
 @import '../components/About/about';
+@import '../components/Work/work';
 @import '../components/Contact/contact';
 
 
@@ -23,7 +24,7 @@ body {
 
 section {
   width: 100%;
-  height: 97vh;
+  min-height: 97vh;
 }
 
 h1, h2 {

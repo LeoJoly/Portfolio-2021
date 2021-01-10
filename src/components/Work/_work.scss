@@ -1,0 +1,50 @@
+.work {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &__content {
+    width: 80%;
+    font-size: 1.2rem;
+
+    &__title {
+      font-size: 5rem;
+      transform: translateX(-5px);
+    }
+
+    &__flow {
+     width: 100%;
+     justify-content: space-between;
+    }
+
+    &__links {
+      line-height: 1.5rem;
+      margin-top: 2rem;
+    }
+
+    &__link {
+      font-size: 2rem;
+      font-weight: 500;
+      line-height: 2.4rem;
+      transition: .6s all ease-in-out;
+
+      &:hover {
+        color: $color-alt;
+        font-weight: 700;
+        transform: translateX(20px);
+      }
+
+      &--active {
+        color: $color-alt;
+        font-weight: 700;
+        transform: translateX(20px);
+      }
+    }
+
+    &__ex {
+      background-color: $color;
+      width: 60%;
+      height: 200px;
+    }
+  }
+}
