@@ -1,0 +1,33 @@
+.contact {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+
+  &__content {
+    width: 50%;
+    margin-left: 10vw;
+    font-size: 1.2rem;
+
+    &__title {
+      font-size: 5rem;
+      transform: translateX(-5px);
+    }
+
+    &__text {
+      line-height: 1.5rem;
+      margin-top: 2rem;
+    }
+
+    &__links {
+      line-height: 1.5rem;
+      margin-top: 2rem;
+      width: 70%;
+      justify-content: space-between;
+
+      a {
+        display: block;
+        font-weight: 500;
+      }
+    }
+  }
+}
