@@ -23,7 +23,7 @@ const Work = ({ experiences }) => {
   }
 
   return (
-    <section className="work">
+    <section className="work" id="work">
       <div className="work__content">
         <h2 className="work__content__title">Work.</h2>
         <div className="work__content__flow row">
