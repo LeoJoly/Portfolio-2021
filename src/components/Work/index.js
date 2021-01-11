@@ -9,6 +9,19 @@ import Experience from './Experience';
 const Work = ({ experiences }) => {
   const [experience, setExperience] = useState(experiences[0]);
 
+  // control which experience is dispayed
+  const onClick = (event) => {
+    const newExperience = experiences.find(e => e.title === event.target.textContent);
+    setExperience(newExperience);
+  }
+
+  // control the active or inative className
+  const cssClassName = (title) => {
+    if (title === experience.title) return 'work__content__link work__content__link--active';
+
+    return 'work__content__link';
+  }
+
   return (
     <section className="work">
       <div className="work__content">
@@ -16,7 +29,7 @@ const Work = ({ experiences }) => {
         <div className="work__content__flow row">
           <div className="work__content__links column">
             {experiences.map((exp => {
-              return <div className="work__content__link">{exp.title}</div>
+              return <div key={exp.id} className={cssClassName(exp.title)} onClick={onClick}>{exp.title}</div>
             }))}
           </div>
           <Experience experience={experience} />

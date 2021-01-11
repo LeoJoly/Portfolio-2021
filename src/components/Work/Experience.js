@@ -8,7 +8,7 @@ const Experience = ({ experience }) => (
     </p>
     <div className="experience__links row">
       {experience.links.map((link) => {
-        return <a href={link.url} target="_blank">{link.name}</a>;
+        return <a key={link.id} href={link.url} target="_blank">{link.name}</a>;
       })}
     </div>
   </div>
