@@ -15,6 +15,7 @@
     &__flow {
      width: 100%;
      justify-content: space-between;
+     align-items: center;
     }
 
     &__links {
@@ -45,6 +46,28 @@
       background-color: $color;
       width: 60%;
       height: 200px;
+    }
+  }
+}
+
+.experience {
+  width: 60%;
+  font-size: 1.2rem;
+  line-height: 1.5rem;
+
+  &__links {
+    margin-top: 2rem;
+    justify-content: flex-start;
+
+    a {
+      margin-right: 2.5rem;
+      font-weight: 500;
+      transition: .6s all ease-in-out;
+
+      &:hover {
+        font-weight: 700;
+        color: $color-alt;
+      }
     }
   }
 }
