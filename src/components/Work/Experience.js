@@ -1,16 +1,21 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
-const Experience = () => (
+const Experience = ({ experience }) => (
   <div className="experience">
     <p className="experience__description">
-      The Counter is a simple app made with React and Sass that you can use to count people at the entrance of a shop, a concert venue or any other place you want.<br />
-      Use it on your mobile device for a better experience.
+      {experience.description}
     </p>
     <div className="experience__links row">
-      <a href="/" target="_blank">Try it</a>
-      <a href="/" target="_blank">GitHub repo</a>
+      {experience.links.map((link) => {
+        return <a href={link.url} target="_blank">{link.name}</a>;
+      })}
     </div>
   </div>
 );
+
+Experience.prototype = {
+  experience: PropTypes.object.isRequired,
+}
 
 export default Experience;
