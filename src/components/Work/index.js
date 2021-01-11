@@ -1,12 +1,16 @@
 // == packages imports
-import React, { useState } from 'react';
+import React, { useRef, useState } from 'react';
 import PropTypes from 'prop-types';
 
 // == local imports
 // components
 import Experience from './Experience';
+// utils
+import animateOnScroll from '../../animateOnScroll';
 
 const Work = ({ experiences }) => {
+  const workRef = useRef(null);
+
   const [experience, setExperience] = useState(experiences[0]);
 
   // control which experience is dispayed
@@ -22,9 +26,11 @@ const Work = ({ experiences }) => {
     return 'work__content__link';
   }
 
+  animateOnScroll(workRef, 0, 60);
+
   return (
     <section className="work" id="work">
-      <div className="work__content">
+      <div ref={workRef} className="work__content">
         <h2 className="work__content__title">Work.</h2>
         <div className="work__content__flow row">
           <div className="work__content__links column">
