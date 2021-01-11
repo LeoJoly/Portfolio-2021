@@ -7,7 +7,7 @@ import animateOnScroll from '../../animateOnScroll';
 const Contact = () => {
   const contactRef = useRef(null);
 
-  animateOnScroll(contactRef, -80, 0);
+  animateOnScroll(contactRef, 0, 60);
 
   return (
     <section className="contact" id="contact">

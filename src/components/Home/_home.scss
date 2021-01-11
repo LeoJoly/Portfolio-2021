@@ -3,12 +3,14 @@
   background-position: top;
   background-repeat: no-repeat;
   background-size: cover;
+  animation: appearSmoothly 2s cubic-bezier(.19, 1, .22, 1);
   
   .main-title {
     padding-top: 5rem;
     text-align: center;
     font-size: 15rem;
     color: $color-brighter;
+    animation: appearAndTranslate 2s cubic-bezier(.19, 1, .22, 1);
   }
 
   &__gradient {
@@ -50,5 +52,25 @@
     transform: translateY(0);
     width: 3rem;
     height: 3rem;
+  }
+}
+
+@keyframes appearSmoothly {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes appearAndTranslate {
+  0% {
+    transform: translateY(-80px);
+  }
+
+  100% {
+    transform: translateY(0);
   }
 }

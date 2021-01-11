@@ -8,7 +8,7 @@ const About = () => {
   
   const aboutRef = useRef(null);
 
-  animateOnScroll(aboutRef, -80, 0);
+  animateOnScroll(aboutRef, 0, 60);
 
   return (
     <section className="about" id="about">
