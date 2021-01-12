@@ -4,9 +4,9 @@ import { Link as ScrollLink } from 'react-scroll'
 
 // comptonent
 const Header = () => (
-  <header className="header row">
+  <header className="header">
     <nav>
-      <ul className="menu row">
+      <ul className="menu">
         <li className="menu__btn">
           <ScrollLink activeClass="active" to="about" spy smooth={true} duration={800}>About</ScrollLink>
         </li>

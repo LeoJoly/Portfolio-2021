@@ -32,8 +32,8 @@ const Work = ({ experiences }) => {
     <section className="work" id="work">
       <div ref={workRef} className="work__content">
         <h2 className="work__content__title">Work.</h2>
-        <div className="work__content__flow row">
-          <div className="work__content__links column">
+        <div className="work__content__flow">
+          <div className="work__content__links">
             {experiences.map((exp => {
               return <div key={exp.id} className={cssClassName(exp.title)} onClick={onClick}>{exp.title}</div>
             }))}

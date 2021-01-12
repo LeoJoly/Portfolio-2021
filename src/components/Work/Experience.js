@@ -24,7 +24,7 @@ const Experience = ({ experience }) => {
       <p className="experience__description">
         {experience.description}
       </p>
-      <div className="experience__links row">
+      <div className="experience__links">
         {experience.links.map((link) => {
           // eslint-disable-next-line react/jsx-no-target-blank
           return <a key={link.id} href={link.url} target="_blank">{link.name}</a>;

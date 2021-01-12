@@ -4,6 +4,9 @@
 /* -- Variables -- */
 @import './variables';
 
+/* -- Breakpoints -- */
+@import './breakpoints';
+
 /* -- Components styles -- */
 @import '../components/App/app';
 @import '../components/Header/header';
@@ -14,7 +17,6 @@
 
 
 /* -- Global styles -- */
-
 body {
   background: $color-brighter;
   color: $color;
@@ -33,14 +35,4 @@ h1, h2 {
 
 h3, h4, h5 {
   font-weight: 500;
-}
-
-.row {
-  display: flex;
-  flex-flow: row wrap;
-}
-
-.column {
-  display: flex;
-  flex-flow: column wrap;
 }

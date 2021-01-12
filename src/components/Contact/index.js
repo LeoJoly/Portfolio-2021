@@ -17,7 +17,7 @@ const Contact = () => {
           {/* eslint-disable-next-line max-len */}
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lectus magna fringilla urna porttitor rhoncus.
         </p>
-        <div className="contact__content__links row">
+        <div className="contact__content__links">
           <a href="mailto:joly.leo@gmail.com">Mail</a>
           <a href="/" target="_blank">LinkdeIn</a>
           <a href="/" target="_blank">GitHub</a>

@@ -11,6 +11,14 @@
     font-size: 15rem;
     color: $color-brighter;
     animation: appearAndTranslate 2s cubic-bezier(.19, 1, .22, 1);
+    @include media('<=tablet') {
+      font-size: 9.2rem;
+      padding-top: 10rem;
+    }
+    @include media('<=phone') {
+      font-size: 8rem;
+      padding-top: 5rem;
+    }
   }
 
   &__gradient {
@@ -18,20 +26,29 @@
     background: linear-gradient(0deg, rgba(191,191,184,1) 0%, rgba(191,191,184,0) 100%);
     width: 100%;
     position: absolute;
-    bottom: -6vh;
+    bottom: -5vh;
     height: 20rem;
+    @include media('<=tablet') {
+      bottom: -1vh;
+    }
   }
 
-  &__btn {
+  &__box {
     z-index: 2;
-    margin: 0 auto 2rem;
+    height: 15vh;
     position: absolute;
+    left: 0;
     bottom: 0;
-    left: 50%;
-    transform: translate(-50%, 0);
-    background-color: $color;
-    border-radius: 50%;
-    animation: bounce 2s infinite ease-in-out;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &__btn {
+      background-color: $color;
+      border-radius: 50%;
+      animation: bounce 2s infinite ease-in-out;
+      cursor: pointer;
+    }
   }
 }
 

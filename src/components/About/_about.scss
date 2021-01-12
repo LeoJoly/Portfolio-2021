@@ -2,23 +2,44 @@
   display: flex;
   justify-content: flex-end;
   align-items: center;
+  @include media('<=tablet') {
+    justify-content: center;
+  }
 
   &__content {
     width: 50%;
     margin-right: 10vw;
     font-size: 1.2rem;
+    @include media('<=tablet') {
+      width: 80%;
+      margin: 0;
+    }
+    @include media('<=phone') {
+      font-size: 1rem;
+    }
     
     &__title {
       font-size: 5rem;
       transform: translateX(-6px);
+      @include media('<=phone') {
+        font-size: 3rem;
+        transform: translateX(-2px);
+      }
     }
+    
     &__text {
       line-height: 1.5rem;
       margin-top: 2rem;
+      @include media('<=phone') {
+        margin-top: 1rem;
+      }
     }
     &__list {
       line-height: 1.5rem;
       margin-top: 2rem;
+      @include media('<=phone') {
+        margin-top: 1rem;
+      }
     }
   }
 }
