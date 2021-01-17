@@ -10,10 +10,9 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
  * @param {Integer} x - movement on x
  * @param {Integer} y - movement on y
  */
-const animateOnScroll = (ref, x, y) => {
+const useAnimateOnScroll = (ref, x, y) => {
   gsap.registerPlugin(ScrollTrigger);
 
-  // eslint-disable-next-line react-hooks/rules-of-hooks
   useEffect(() => {
     const el = ref.current
     gsap.from(el, {
@@ -28,7 +27,8 @@ const animateOnScroll = (ref, x, y) => {
         toggleActions: "play none none none",
       }
     })
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 };
 
-export default animateOnScroll;
+export default useAnimateOnScroll;

@@ -1,5 +1,5 @@
 // == packages imports
-import React from 'react';
+import React, { useEffect } from 'react';
 
 // == local imports
 // components
@@ -11,14 +11,30 @@ import Contact from '../Contact';
 // data
 import experiences from '../../data';
 
-const App = () => (
-  <div className="app">
-    <Header />
-    <Home />
-    <About />
-    <Work experiences={experiences} />
-    <Contact />
-  </div>
-);
+const App = () => {
+  // calculate the window height
+  useEffect(() => {
+    // getting the window height
+    let vh = window.innerHeight * 0.01;
+    document.documentElement.style.setProperty('--vh', `${vh}px`);
+
+    // listen to window resizing
+    window.addEventListener('resize', () => {
+      // We execute the same script as before
+      let vh = window.innerHeight * 0.01;
+      document.documentElement.style.setProperty('--vh', `${vh}px`);
+    });
+  }, []);
+
+  return (
+    <div className="app">
+      <Header />
+      <Home />
+      <About />
+      <Work experiences={experiences} />
+      <Contact />
+    </div>
+  );
+}
 
 export default App;

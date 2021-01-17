@@ -26,16 +26,17 @@
     background: linear-gradient(0deg, rgba(191,191,184,1) 0%, rgba(191,191,184,0) 100%);
     width: 100%;
     position: absolute;
-    bottom: -5vh;
+    bottom: -45px;
     height: 20rem;
     @include media('<=tablet') {
-      bottom: -1vh;
+      bottom: 0;
     }
   }
 
   &__box {
     z-index: 2;
     height: 15vh;
+    height: calc(var(--vh, 1vh) * 15);
     position: absolute;
     left: 0;
     bottom: 0;

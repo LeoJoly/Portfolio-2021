@@ -2,13 +2,13 @@
 import React, { useRef } from 'react';
 
 // == Local imports
-import animateOnScroll from '../../animateOnScroll';
+import useAnimateOnScroll from '../../hooks/useAnimateOnScroll';
 
 const About = () => {
   
   const aboutRef = useRef(null);
 
-  animateOnScroll(aboutRef, 0, 60);
+  useAnimateOnScroll(aboutRef, 0, 60);
 
   return (
     <section className="about" id="about">

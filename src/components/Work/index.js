@@ -6,7 +6,7 @@ import PropTypes from 'prop-types';
 // components
 import Experience from './Experience';
 // utils
-import animateOnScroll from '../../animateOnScroll';
+import useAnimateOnScroll from '../../hooks/useAnimateOnScroll';
 
 const Work = ({ experiences }) => {
   const workRef = useRef(null);
@@ -26,7 +26,7 @@ const Work = ({ experiences }) => {
     return 'work__content__link';
   }
 
-  animateOnScroll(workRef, 0, 60);
+  useAnimateOnScroll(workRef, 0, 60);
 
   return (
     <section className="work" id="work">
