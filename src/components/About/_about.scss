@@ -40,6 +40,18 @@
       @include media('<=phone') {
         margin-top: 1rem;
       }
+
+      li {
+        margin-bottom: .3rem;
+        display: flex;
+        justify-content: flex-start;
+
+        .date {
+          width: 50px;
+          margin-right: 1rem;
+          font-weight: 500;
+        }
+      }
     }
   }
 }
