@@ -9,7 +9,7 @@
     padding-top: 5rem;
     text-align: center;
     font-size: 15rem;
-    color: $color-brighter;
+    color: $color-bright;
     animation: appearAndTranslate 2s cubic-bezier(.19, 1, .22, 1);
     @include media('<=tablet') {
       font-size: 9.2rem;
@@ -22,8 +22,8 @@
   }
 
   &__gradient {
-    background: $color-brighter;
-    background: linear-gradient(0deg, rgba(191,191,184,1) 0%, rgba(191,191,184,0) 100%);
+    background: $color-bright;
+    background: linear-gradient(0deg, rgba(246,253,254,1) 0%, rgba(246,253,254,0) 100%);
     width: 100%;
     position: absolute;
     bottom: -45px;

@@ -53,7 +53,7 @@
 
       &:hover {
         color: $color-alt;
-        font-weight: 700;
+        // font-weight: 700;
         transform: translateX(20px);
       }
 
@@ -92,8 +92,8 @@
       transition: .6s all ease-in-out;
 
       &:hover {
-        font-weight: 700;
         color: $color-alt;
+        border-bottom: 1px solid $color-alt;
       }
     }
   }

@@ -51,6 +51,12 @@
         margin-right: 2.5rem;
         display: block;
         font-weight: 500;
+        transition: .6s ease-in-out;
+
+        &:hover {
+          color: $color-alt;
+          border-bottom: 1px solid $color-alt;
+        }
       }
     }
   }

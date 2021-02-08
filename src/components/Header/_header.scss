@@ -7,7 +7,7 @@
   align-items: center;
   position: sticky;
   top: 0;
-  background-color: $color-brighter;
+  background-color: $color-bright;
   @include media('<=tablet') {
     display: none;
   }
@@ -23,12 +23,13 @@
       align-items: center;
       
       &__btn {
-        color: $color-bright;
-        transition: .6s all ease-in-out;
+        color: $color-alt;
+        transition: .3s ease-in-out;
         cursor: pointer;
 
         &:hover, .active {
           color: $color-dark;
+          border-bottom: solid 1px $color-dark;
         }
       }
     }

@@ -14,14 +14,12 @@ const Contact = () => {
       <div ref={contactRef} className="contact__content">
         <h2 className="contact__content__title">Contact.</h2>
         <p className="contact__content__text">
-          {/* eslint-disable-next-line max-len */}
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lectus magna fringilla urna porttitor rhoncus.
+          If you'd like to get more details on my work, discuss about a project, or simply chat about mountains and snowboarding, don't hesitate to get in touch.
         </p>
         <div className="contact__content__links">
           <a href="mailto:joly.leo@gmail.com">Mail</a>
-          <a href="/" target="_blank">LinkdeIn</a>
-          <a href="/" target="_blank">GitHub</a>
-          <a href="/" target="_blank">Instagram</a>
+          <a href="https://www.linkedin.com/in/leojoly/" target="_blank" rel="noreferrer">LinkdeIn</a>
+          <a href="https://github.com/LeoJoly" target="_blank" rel="noreferrer">GitHub</a>
         </div>
       </div>
     </section>
