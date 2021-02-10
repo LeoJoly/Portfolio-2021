@@ -15,7 +15,7 @@ const About = () => {
       <div ref={aboutRef} className="about__content">
         <h2 className="about__content__title">Hello.</h2>
         <p className="about__content__text">
-          I'm Leo, fullstack developer based between Paris and the French alps. I'm a design passionate and I like to code beautiful and fonctional things.
+          I'm Leo, frontend developer based between Paris and the French alps. With my past as Communication Manager, I have a serious passion for design and creation. Now I focus on writting simple and fonctional code to create intuitive and dynamic user experiences.
         </p>
         <p className="about__content__text">
           Stack: JS, React, Redux, Node.js, PostgreSQL, CSS, SCSS, HTML.

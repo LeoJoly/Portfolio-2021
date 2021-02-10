@@ -86,14 +86,27 @@
       flex-flow: column wrap;
     }
 
-    a {
+    &__el {
       margin-right: 2.5rem;
       font-weight: 500;
       transition: .6s all ease-in-out;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      &__under {
+        height: 2px;
+        width: 0%;
+        background-color: $color-alt;
+        transition: .3s ease-in-out;
+      }
 
       &:hover {
         color: $color-alt;
-        border-bottom: 1px solid $color-alt;
+
+        .experience__links__el__under {
+          width: 60%;
+        }
       }
     }
   }
