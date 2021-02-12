@@ -28,8 +28,8 @@ const Experience = ({ experience }) => {
         {experience.links.map((link) => {
           // eslint-disable-next-line react/jsx-no-target-blank
           return (
-            <div className="experience__links__el">
-              <a key={link.id} href={link.url} target="_blank">{link.name}</a>
+            <div key={link.id} className="experience__links__el">
+              <a href={link.url} target="_blank" rel="noreferrer">{link.name}</a>
               <div className="experience__links__el__under" />
             </div>
           );
