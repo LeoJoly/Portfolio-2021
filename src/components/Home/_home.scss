@@ -10,7 +10,7 @@
     text-align: center;
     font-size: 15rem;
     color: $color-bright;
-    animation: appearAndTranslate 2s cubic-bezier(.19, 1, .22, 1);
+    // animation: appearAndTranslate 2s cubic-bezier(.19, 1, .22, 1);
     @include media('<=tablet') {
       font-size: 9.2rem;
       padding-top: 10rem;
@@ -41,9 +41,12 @@
     left: 0;
     bottom: 0;
     right: 0;
-    display: flex;
+    display: none;
     justify-content: center;
     align-items: center;
+    @include media('<=tablet') {
+      display: flex;
+    }
     &__btn {
       background-color: $color;
       border-radius: 50%;
