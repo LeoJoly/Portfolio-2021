@@ -1,18 +1,21 @@
 .about {
   display: flex;
-  justify-content: flex-end;
+  justify-content: center;
   align-items: center;
   @include media('<=tablet') {
     justify-content: center;
   }
 
   &__content {
-    width: 50%;
-    margin-right: 10vw;
+    width: 80%;
     font-size: 1.2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     @include media('<=tablet') {
+      display: block;
+      align-items: flex-start;
       width: 80%;
-      margin: 0;
     }
     @include media('<=phone') {
       font-size: 1rem;
@@ -20,38 +23,40 @@
     
     &__title {
       font-size: 5rem;
-      transform: translateX(-6px);
+      transform: rotate(-90deg);
       @include media('<=phone') {
         font-size: 3rem;
         transform: translateX(-2px);
       }
     }
-    
-    &__text {
-      line-height: 1.5rem;
-      margin-top: 2rem;
-      @include media('<=phone') {
-        margin-top: 1rem;
-      }
-    }
-    &__list {
-      line-height: 1.5rem;
-      margin-top: 2rem;
-      @include media('<=phone') {
-        margin-top: 1rem;
-      }
 
-      li {
-        margin-bottom: .3rem;
-        display: flex;
-        justify-content: flex-start;
-
-        .date {
-          width: 50px;
-          margin-right: 1rem;
-          font-weight: 700;
+    &__box {
+      &__text {
+        line-height: 1.5rem;
+        margin-top: 2rem;
+        @include media('<=phone') {
+          margin-top: 1rem;
+        }
+      }
+      &__list {
+        line-height: 1.5rem;
+        margin-top: 2rem;
+        @include media('<=phone') {
+          margin-top: 1rem;
+        }
+  
+        li {
+          margin-bottom: .3rem;
+          display: flex;
+          justify-content: flex-start;
         }
       }
     }
   }
+}
+
+.date {
+  width: 50px;
+  margin-right: 1rem;
+  font-weight: 700;
 }
