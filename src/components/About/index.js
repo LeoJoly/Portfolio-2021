@@ -16,7 +16,7 @@ const About = () => {
         <h2 className="about__content__title">Hello.</h2>
         <div className="about__content__box">
           <p className="about__content__box__text">
-            I'm Leo, frontend developer based between Paris and the French alps. With my past as Communication Manager, I have a serious passion for design and creation. Now I focus on writting simple and fonctional code to create intuitive and dynamic user experiences.
+            I'm Leo, frontend developer based between Paris and the French Alps. With my past as Communication Manager, I have a serious passion for design and creation. Now I focus on writting simple and fonctional code to create intuitive and dynamic user experiences.
           </p>
           <p className="about__content__box__text">
             Stack: JS, React, Redux, Node.js, PostgreSQL, CSS, SCSS, HTML.
@@ -28,7 +28,7 @@ const About = () => {
             </li> */}
             <li>
               <div className="date">2020</div>
-              <div className="formation">Web developper certificate (Ecole O'clock) - coding bootcamp</div>
+              <div className="formation">Web developer certificate (Ecole O'clock) - coding bootcamp</div>
             </li>
             <li>
               <div className="date">2015</div>
