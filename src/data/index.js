@@ -18,6 +18,23 @@ const experiences = [
   },
   {
     id: 2,
+    title: 'Drizzle',
+    description: 'Drizzle is a cool and accurate weather app made with React.js, Redux and GSAP, using the api\'s from HERE and OpenWeather',
+    links: [
+      {
+        id: 1,
+        name: 'Try it',
+        url: 'https://drizzle-weather.surge.sh/',
+      },
+      {
+        id: 2,
+        name: 'Repository',
+        url: 'https://github.com/LeoJoly/drizzle-weather-app',
+      }
+    ]
+  },
+  {
+    id: 3,
     title: 'Simple Chat',
     description: 'Simple Chat is a minimalist chat application made for fun using React.js, Node.js, Express and Socket.io',
     links: [
@@ -30,18 +47,6 @@ const experiences = [
         id: 2,
         name: 'Repository',
         url: 'https://github.com/LeoJoly/simple-chat',
-      }
-    ]
-  },
-  {
-    id: 3,
-    title: 'The Counter',
-    description: 'The Counter is a simple app made with React and Sass that you can use to count people at the entrance of a shop, a concert venue or any other place you want. Use it on your mobile device for a better experience.',
-    links: [
-      {
-        id: 1,
-        name: 'Repository',
-        url: 'https://github.com/LeoJoly/the-counter',
       }
     ]
   },
